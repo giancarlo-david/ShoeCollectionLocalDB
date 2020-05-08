@@ -38,16 +38,14 @@ namespace ShoeCollectionLocalDB
                     MessageBox.Show("The shoe was added successfully");
                 }
 
-                catch(Exception ex)
+                catch
                 {
-                    throw ex;
-                    //MessageBox.Show("Error adding shoe");
+                    MessageBox.Show("Error adding shoe");
                 }
             }
-            catch(Exception ex)
+            catch
             {
-                throw ex;
-                //MessageBox.Show("Fill all the fields properly");
+                MessageBox.Show("Please fill all the fields properly");
             }
         }
 

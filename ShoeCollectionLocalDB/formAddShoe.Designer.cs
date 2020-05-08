@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formAddShoe));
             this.labelBrand = new System.Windows.Forms.Label();
             this.labelModel = new System.Windows.Forms.Label();
             this.labelColorway = new System.Windows.Forms.Label();
@@ -38,51 +39,61 @@
             this.cbSize = new System.Windows.Forms.ComboBox();
             this.btnAddShoe = new System.Windows.Forms.Button();
             this.btnFinish = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // labelBrand
             // 
             this.labelBrand.AutoSize = true;
-            this.labelBrand.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelBrand.Location = new System.Drawing.Point(56, 64);
+            this.labelBrand.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(27)))));
+            this.labelBrand.Font = new System.Drawing.Font("Lucida Bright", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelBrand.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.labelBrand.Location = new System.Drawing.Point(56, 59);
             this.labelBrand.Name = "labelBrand";
-            this.labelBrand.Size = new System.Drawing.Size(47, 16);
+            this.labelBrand.Size = new System.Drawing.Size(46, 15);
             this.labelBrand.TabIndex = 0;
             this.labelBrand.Text = "Brand:";
             // 
             // labelModel
             // 
             this.labelModel.AutoSize = true;
-            this.labelModel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelModel.Location = new System.Drawing.Point(56, 100);
+            this.labelModel.Font = new System.Drawing.Font("Lucida Bright", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelModel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.labelModel.Location = new System.Drawing.Point(56, 102);
             this.labelModel.Name = "labelModel";
-            this.labelModel.Size = new System.Drawing.Size(49, 16);
+            this.labelModel.Size = new System.Drawing.Size(48, 15);
             this.labelModel.TabIndex = 1;
             this.labelModel.Text = "Model:";
             // 
             // labelColorway
             // 
             this.labelColorway.AutoSize = true;
-            this.labelColorway.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelColorway.Location = new System.Drawing.Point(56, 140);
+            this.labelColorway.Font = new System.Drawing.Font("Lucida Bright", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelColorway.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.labelColorway.Location = new System.Drawing.Point(56, 145);
             this.labelColorway.Name = "labelColorway";
-            this.labelColorway.Size = new System.Drawing.Size(67, 16);
+            this.labelColorway.Size = new System.Drawing.Size(71, 15);
             this.labelColorway.TabIndex = 2;
             this.labelColorway.Text = "Colorway:";
             // 
             // labelSize
             // 
             this.labelSize.AutoSize = true;
-            this.labelSize.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSize.Location = new System.Drawing.Point(56, 179);
+            this.labelSize.Font = new System.Drawing.Font("Lucida Bright", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSize.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.labelSize.Location = new System.Drawing.Point(56, 187);
             this.labelSize.Name = "labelSize";
-            this.labelSize.Size = new System.Drawing.Size(37, 16);
+            this.labelSize.Size = new System.Drawing.Size(36, 15);
             this.labelSize.TabIndex = 3;
             this.labelSize.Text = "Size:";
             // 
             // cbBrand
             // 
+            this.cbBrand.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(217)))), ((int)(((byte)(198)))));
             this.cbBrand.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbBrand.Font = new System.Drawing.Font("Lucida Bright", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbBrand.FormattingEnabled = true;
             this.cbBrand.Items.AddRange(new object[] {
             "Adidas",
@@ -97,28 +108,34 @@
             "Saucony",
             "Vans",
             "Other"});
-            this.cbBrand.Location = new System.Drawing.Point(151, 59);
+            this.cbBrand.Location = new System.Drawing.Point(151, 51);
             this.cbBrand.Name = "cbBrand";
-            this.cbBrand.Size = new System.Drawing.Size(100, 21);
+            this.cbBrand.Size = new System.Drawing.Size(100, 23);
             this.cbBrand.TabIndex = 1;
             // 
             // tbModel
             // 
-            this.tbModel.Location = new System.Drawing.Point(151, 99);
+            this.tbModel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(217)))), ((int)(((byte)(198)))));
+            this.tbModel.Font = new System.Drawing.Font("Lucida Bright", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbModel.Location = new System.Drawing.Point(151, 94);
             this.tbModel.Name = "tbModel";
-            this.tbModel.Size = new System.Drawing.Size(100, 20);
+            this.tbModel.Size = new System.Drawing.Size(100, 23);
             this.tbModel.TabIndex = 2;
             // 
             // tbColorway
             // 
-            this.tbColorway.Location = new System.Drawing.Point(151, 136);
+            this.tbColorway.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(217)))), ((int)(((byte)(198)))));
+            this.tbColorway.Font = new System.Drawing.Font("Lucida Bright", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbColorway.Location = new System.Drawing.Point(151, 137);
             this.tbColorway.Name = "tbColorway";
-            this.tbColorway.Size = new System.Drawing.Size(100, 20);
+            this.tbColorway.Size = new System.Drawing.Size(100, 23);
             this.tbColorway.TabIndex = 3;
             // 
             // cbSize
             // 
+            this.cbSize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(217)))), ((int)(((byte)(198)))));
             this.cbSize.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbSize.Font = new System.Drawing.Font("Lucida Bright", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbSize.FormattingEnabled = true;
             this.cbSize.Items.AddRange(new object[] {
             "7.0",
@@ -134,38 +151,69 @@
             "12.0",
             "12.5",
             "13.0"});
-            this.cbSize.Location = new System.Drawing.Point(151, 174);
+            this.cbSize.Location = new System.Drawing.Point(151, 179);
             this.cbSize.Name = "cbSize";
-            this.cbSize.Size = new System.Drawing.Size(100, 21);
+            this.cbSize.Size = new System.Drawing.Size(100, 23);
             this.cbSize.TabIndex = 4;
             // 
             // btnAddShoe
             // 
-            this.btnAddShoe.Location = new System.Drawing.Point(59, 240);
+            this.btnAddShoe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(217)))), ((int)(((byte)(198)))));
+            this.btnAddShoe.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnAddShoe.Font = new System.Drawing.Font("Eras Medium ITC", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddShoe.Image = ((System.Drawing.Image)(resources.GetObject("btnAddShoe.Image")));
+            this.btnAddShoe.Location = new System.Drawing.Point(0, 0);
             this.btnAddShoe.Name = "btnAddShoe";
-            this.btnAddShoe.Size = new System.Drawing.Size(85, 60);
+            this.btnAddShoe.Size = new System.Drawing.Size(93, 100);
             this.btnAddShoe.TabIndex = 5;
             this.btnAddShoe.Text = "Add Shoe";
-            this.btnAddShoe.UseVisualStyleBackColor = true;
+            this.btnAddShoe.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnAddShoe.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnAddShoe.UseVisualStyleBackColor = false;
             this.btnAddShoe.Click += new System.EventHandler(this.btnAddShoe_Click);
             // 
             // btnFinish
             // 
-            this.btnFinish.Location = new System.Drawing.Point(159, 240);
+            this.btnFinish.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(217)))), ((int)(((byte)(198)))));
+            this.btnFinish.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnFinish.Font = new System.Drawing.Font("Eras Medium ITC", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFinish.Image = ((System.Drawing.Image)(resources.GetObject("btnFinish.Image")));
+            this.btnFinish.Location = new System.Drawing.Point(97, 0);
             this.btnFinish.Name = "btnFinish";
-            this.btnFinish.Size = new System.Drawing.Size(92, 60);
+            this.btnFinish.Size = new System.Drawing.Size(95, 100);
             this.btnFinish.TabIndex = 6;
             this.btnFinish.Text = "Finish";
-            this.btnFinish.UseVisualStyleBackColor = true;
+            this.btnFinish.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnFinish.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnFinish.UseVisualStyleBackColor = false;
             this.btnFinish.Click += new System.EventHandler(this.btnFinish_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.btnAddShoe);
+            this.panel1.Controls.Add(this.btnFinish);
+            this.panel1.Location = new System.Drawing.Point(59, 228);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(192, 100);
+            this.panel1.TabIndex = 7;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(68)))), ((int)(((byte)(145)))));
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(298, 34);
+            this.panel2.TabIndex = 8;
             // 
             // formAddShoe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(27)))));
             this.ClientSize = new System.Drawing.Size(298, 360);
-            this.Controls.Add(this.btnFinish);
-            this.Controls.Add(this.btnAddShoe);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.cbSize);
             this.Controls.Add(this.tbColorway);
             this.Controls.Add(this.tbModel);
@@ -174,8 +222,10 @@
             this.Controls.Add(this.labelColorway);
             this.Controls.Add(this.labelModel);
             this.Controls.Add(this.labelBrand);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "formAddShoe";
-            this.Text = "formAddShoe";
+            this.Text = "Add Shoe";
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -193,5 +243,7 @@
         private System.Windows.Forms.ComboBox cbSize;
         private System.Windows.Forms.Button btnAddShoe;
         private System.Windows.Forms.Button btnFinish;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
     }
 }
