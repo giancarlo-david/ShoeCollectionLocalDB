@@ -54,3 +54,17 @@ to have their own personal list on their device.
   designing
   * Thank you for checking my project out :)
 
+# Things to add/improve
+ * Shows picture of currently selected shoe or brand of currently selected shoe
+ * Font changes
+ * Filter by color
+ * Make textbox for when brand is other
+ * Reset model and colorway in add shoe when shoe is added
+ * Autocomplete on shoe model based on database values
+ * Try to make deleting duplicates so that it only deletes the duplicate and not both shoes
+ * Make weekly rotation have the option of duplicates or not (depending on shoe count or checkbox)
+ * Show weekly rotation in empty white space once it's generated and store within database
+ * Add Favorites list
+ * Add prices of shoes based on online prices
+ 
+ 
